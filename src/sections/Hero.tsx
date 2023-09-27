@@ -3,8 +3,8 @@ import React from "react";
 
 export default function Hero() {
   return (
-    <section className="w-full mx-auto bg-gray-950">
-      <div className="max-w-screen-xl px-4 py-32">
+    <section className="w-full mx-auto bg-gray-950 pt-20">
+      <div className="container py-40">
         <div className="max-w-3xl text-gray-100">
           <h1 className="text-5xl font-bold bg-clip-text sm:text-5xl xs:text-center">
             EHB VVS <span className="sm:block"> Rörmokare i Stockholm </span>
@@ -13,7 +13,7 @@ export default function Hero() {
             lorem
           </p>
           <div className="flex flex-wrap gap-4 mt-8 xs:text-center">
-            <Button text="Våra tjänster" type="primary" />
+            <Button text="Våra tjänster" type="primary" link="/tjanster" />
             <Button text="Kontakta oss" type="primary" link="/kontakt" />
           </div>
         </div>

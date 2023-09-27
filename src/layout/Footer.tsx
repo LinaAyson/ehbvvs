@@ -1,6 +1,4 @@
-import React from "react";
-
-const Footer = () => {
+export default function Footer() {
   return (
     <footer className="relative pt-8 pb-6 bg-gray-900">
       <div className="container px-4 mx-auto">
@@ -110,13 +108,13 @@ const Footer = () => {
                     </a>
                   </li>
                   {/* <li>
-                    <a
-                      className="block pb-2 text-sm font-semibold text-blueGray-600 hover:text-blueGray-800"
-                      href=""
-                    >
-                      Contact Us
-                    </a>
-                  </li> */}
+                <a
+                  className="block pb-2 text-sm font-semibold text-blueGray-600 hover:text-blueGray-800"
+                  href=""
+                >
+                  Contact Us
+                </a>
+              </li> */}
                 </ul>
               </div>
             </div>
@@ -132,7 +130,6 @@ const Footer = () => {
                 className="text-gray-500 hover:text-indigo-900"
                 target="_blank"
               >
-                {" "}
                 Weblou
               </a>
             </div>
@@ -141,6 +138,4 @@ const Footer = () => {
       </div>
     </footer>
   );
-};
-
-export default Footer;
+}

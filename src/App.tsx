@@ -1,8 +1,8 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
-import Layout from "./pages/Layout";
-import ContactPage from "./components/ContactPage";
+import Layout from "./layout/Layout";
+import Careers from "./pages/Careers";
 
 export default function App() {
   return (
@@ -10,8 +10,8 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route path="/" element={<Home />} />
-          <Route path="kontakt" element={<ContactPage />} />
-          <Route path="tjanster" element={<ContactPage />} />
+          <Route path="kontakt" element={<Contact />} />
+          <Route path="karriar" element={<Careers />} />
         </Route>
       </Routes>
     </BrowserRouter>
