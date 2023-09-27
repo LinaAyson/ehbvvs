@@ -17,14 +17,14 @@ export default function Header() {
   let [isOpen, setisOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 w-full shadow-md bg-white ">
+    <header className="fixed top-0 left-0 w-full bg-gray-900 shadow-md ">
       <div className="container items-center justify-between py-4 md:flex">
         <NavLink
           to="/"
           className="flex items-center gap-2 text-2xl cursor-pointer"
         >
-          <WrenchScrewdriverIcon className="w-7 h-7" />
-          <span className="font-bold">EHB VVS</span>
+          <WrenchScrewdriverIcon className="text-gray-100 w-7 h-7" />
+          <span className="font-bold text-gray-100 ">EHB VVS</span>
         </NavLink>
         <div
           onClick={() => setisOpen(!isOpen)}
@@ -32,20 +32,13 @@ export default function Header() {
         >
           {isOpen ? <XMarkIcon /> : <Bars3BottomRightIcon />}
         </div>
-        <ul
-          className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static bg-white md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-300 ease-in ${
-            isOpen ? "top-12" : "top-[-490px]"
-          }`}
-        >
+        <ul className="flex space-x-5 text-gray-100">
           {Links.map((link) => (
-            <NavLink
-              to={link.link}
-              className="font-semibold my-7 md:my-0 md:ml-8"
-            >
+            <NavLink to={link.link} className="my-auto">
               {link.name}
             </NavLink>
           ))}
-          <Button link="/kontakt" type="default" text="Kontakta oss" />
+          <Button link="/kontakt" type="primary" text="Kontakta oss" />
         </ul>
       </div>
     </header>

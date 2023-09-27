@@ -25,9 +25,9 @@ export default function SplitImage({
   }
 
   return (
-    <section className="w-full py-10 bg-gray-900">
+    <section className="w-full py-10 bg-slate-800">
       <div className="container grid lg:grid-cols-2">
-        <div className="text-gray-100 space-y-5 my-auto">
+        <div className="my-auto space-y-5 text-gray-100">
           <h2 className="font-bold text-orange-400 uppercase text-md">
             <span className="">
               <hr className="inline-block w-5 h-1 mr-2 border-orange-400" />
@@ -41,7 +41,7 @@ export default function SplitImage({
           <img
             src={image}
             alt="Logo"
-            className="rounded-lg w-auto mx-auto pt-10 lg:pt-0"
+            className="w-auto pt-10 mx-auto rounded-lg lg:pt-0"
           />
         </div>
       </div>
