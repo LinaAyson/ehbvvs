@@ -22,7 +22,7 @@ const About = () => {
             architecto eveniet autem molestias sed?
           </p>
         </div>
-        <div class="">
+        <div className="">
           <img src={pic2} alt="Logo" className="rounded-sm w-50 h-50" />
         </div>
       </div>

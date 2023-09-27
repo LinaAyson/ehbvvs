@@ -4,8 +4,8 @@ import {
   Bars3BottomRightIcon,
   XMarkIcon,
 } from "@heroicons/react/24/solid";
-import { logo1 } from "../assets";
-import ContactBtn from "./ContactBtn";
+import Button from "./Button";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
   let Links = [
@@ -16,12 +16,16 @@ const Header = () => {
   ];
   let [isOpen, setisOpen] = useState(false);
   return (
-    <div className="fixed top-0 left-0 w-full shadow-md ">
+    <div className="fixed top-0 left-0 w-full shadow-md">
       <div className="items-center justify-between py-4 bg-white md:px-10 px-7 md:flex">
-        <div className="flex items-center gap-2 text-2xl cursor-pointer">
+        <NavLink
+          to="/"
+          className="flex items-center gap-2 text-2xl cursor-pointer"
+        >
           <WrenchScrewdriverIcon className="w-7 h-7" />
           <span className="font-bold">EHB VVS</span>
-        </div>
+        </NavLink>
+
         {/* Menu Icon */}
         <div
           onClick={() => setisOpen(!isOpen)}
@@ -40,7 +44,7 @@ const Header = () => {
               <a href="/">{link.name}</a>
             </li>
           ))}
-          <ContactBtn />
+          <Button text="Kontakta oss" />
         </ul>
       </div>
     </div>

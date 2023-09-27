@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "../components/Button";
 
 const Hero = () => {
   return (
@@ -13,18 +14,8 @@ const Hero = () => {
               lorem
             </p>
             <div className="flex flex-wrap gap-4 mt-8 xs:text-center">
-              <a
-                className="block w-full px-12 py-3 font-medium text-white border border-orange-400 rounded text-md hover:bg-gray-800 focus:outline-none focus:ring active:bg-zinc-900 sm:w-auto "
-                href="/get-started"
-              >
-                Våra tjänster
-              </a>
-              <a
-                className="block w-full px-12 py-3 font-medium text-white border border-orange-400 rounded text-md hover:bg-gray-800 focus:outline-none focus:ring active:bg-zinc-900 sm:w-auto"
-                href="/about"
-              >
-                Kontakta oss
-              </a>
+              <Button text="Våra tjänster" type="primary" />
+              <Button text="Kontakta oss" type="primary" link="/kontakt" />
             </div>
           </div>
         </div>

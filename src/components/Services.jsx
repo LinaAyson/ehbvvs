@@ -58,7 +58,7 @@ const Services = () => {
             </li>
           </ul>
         </div>
-        <div class="">
+        <div className="">
           <img src={pic} alt="Logo" className="rounded-sm w-50 h-50" />
         </div>
       </div>
