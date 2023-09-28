@@ -12,7 +12,7 @@ export default function ContactForm() {
         <div className="flex flex-col lg:flex-row">
           <div className="lg:basis-2/3 md:basis-1/2">
             <h6 className="text-sm font-bold text-left text-orange-400 uppercase">
-              <hr className="inline-block w-5 h-1 mx-1 border-orange-400" />
+              <hr className="inline-block w-5 h-1 mx-1 border-orange-400 " />
               Frågor?
             </h6>
             <section className="">
@@ -70,7 +70,7 @@ export default function ContactForm() {
                   </div>
                   <button
                     type="submit"
-                    className="px-5 py-3 text-sm font-medium text-center text-gray-100 bg-gray-700 rounded-lg sm:w-fit hover:bg-gray-800 focus:ring-4 focus:ring-orange-300"
+                    className="px-5 py-3 text-sm font-medium text-center text-gray-100 bg-gray-700 rounded-lg sm:w-fit hover:bg-gray-800 focus:ring-4 focus:ring-orange-400 "
                   >
                     Skicka meddelande
                   </button>
@@ -90,17 +90,17 @@ export default function ContactForm() {
             </p>
             <div className="flex flex-col mt-5">
               <div className="inline-flex mt-5">
-                <MapPinIcon className="w-8 h-8 text-orange-600 " />
+                <MapPinIcon className="w-8 h-8 text-orange-400 " />
                 <a href="https://maps.app.goo.gl/Xh5iuj4yNDgowtDd7">
                   Östermalmsgatan 21, 114 26 Stockholm
                 </a>
               </div>
               <div className="inline-flex mt-5 ">
-                <PhoneIcon className="w-8 h-8 text-orange-600" />
+                <PhoneIcon className="w-8 h-8 text-orange-400 " />
                 <a href="tel:+46709545442">0709545442</a>
               </div>
               <div className="inline-flex mt-5 ">
-                <EnvelopeIcon className="w-8 h-8 text-orange-600 " />
+                <EnvelopeIcon className="w-8 h-8 text-orange-400 " />
                 <a href="mailto:emailadress@email.se">emailadress@email.se</a>
               </div>
             </div>

@@ -7,7 +7,7 @@ type ListItemProps = {
 export default function ListItem({ text }: ListItemProps) {
   return (
     <li className="flex">
-      <CheckCircleIcon className="w-5 h-5 text-orange-400 flex-shrink-0" />
+      <CheckCircleIcon className="flex-shrink-0 w-5 h-5 text-orange-400" />
       <p className="ml-5 text-lg">{text}</p>
     </li>
   );

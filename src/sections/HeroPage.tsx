@@ -15,7 +15,7 @@ export default function HeroPage({ title }: HeroPageProps) {
           <div className="flex items-center justify-center mt-5 ">
             <NavLink
               to="/"
-              className="mr-1 text-sm font-semibold text-gray hover:text-orange-600"
+              className="mr-1 text-sm font-semibold text-gray hover:text-red "
             >
               Hem
             </NavLink>
