@@ -4,6 +4,8 @@ import Contact from "./pages/Contact";
 import Layout from "./layout/Layout";
 import Careers from "./pages/Careers";
 import Services from "./pages/Services";
+import Prices from "./pages/Prices";
+import About from "./pages/About";
 
 export default function App() {
   return (
@@ -14,6 +16,8 @@ export default function App() {
           <Route path="kontakt" element={<Contact />} />
           <Route path="karriar" element={<Careers />} />
           <Route path="tjanster" element={<Services />} />
+          <Route path="priser" element={<Prices />} />
+          <Route path="om-oss" element={<About />} />
         </Route>
       </Routes>
     </BrowserRouter>

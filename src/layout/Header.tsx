@@ -18,7 +18,7 @@ export default function Header() {
   let [isOpen, setisOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 w-full bg-gray-900 shadow-md ">
+    <header className="fixed top-0 left-0 w-full shadow-md bg-gray-950 ">
       <div className="container items-center justify-between pt-2 pb-1 md:flex">
         <NavLink
           to="/"

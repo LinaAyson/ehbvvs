@@ -3,12 +3,11 @@ import {
   MapPinIcon,
   PhoneIcon,
 } from "@heroicons/react/24/outline";
-import React from "react";
 
 export default function ContactForm() {
   return (
-    <section>
-      <div className="container py-10">
+    <section className="bg-gray-100">
+      <div className="container py-10 ">
         <div className="flex flex-col lg:flex-row">
           <div className="lg:basis-2/3 md:basis-1/2">
             <h6 className="text-sm font-bold text-left text-orange-400 uppercase">

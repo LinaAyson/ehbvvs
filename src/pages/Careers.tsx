@@ -9,7 +9,7 @@ export default function Careers() {
       <HeroPage title="Karriär" />
       <SplitImage
         image={image}
-        title="LEDIGA TJÄNSTER"
+        title="Karriär"
         description="Vi söker ständigt efter nya talanger!"
         alignImage="right"
       >
