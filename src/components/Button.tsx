@@ -15,11 +15,11 @@ export default function Button({
   function classNames(type: string) {
     switch (type) {
       case "primary":
-        return "bg-gray-900 text-gray-100 border border-orange-400 ";
+        return "bg-black text-gray-100 border border-orange-400 ";
       case "secondary":
-        return "bg-gray-900 text-gray-100";
+        return "bg-black text-gray-100";
       case "default":
-        return "bg-gray-900 text-gray-100";
+        return "bg-black text-gray-100";
     }
   }
 

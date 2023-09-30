@@ -25,23 +25,23 @@ export default function SplitImage({
   }
 
   return (
-    <section className="w-full py-10 bg-gray-900">
+    <section className="w-full py-10 ">
       <div className="container grid lg:grid-cols-2">
-        <div className="my-auto space-y-5 text-gray-100">
+        <div className="my-auto space-y-5 text-gray-800">
           <h2 className="font-bold text-orange-400 uppercase text-md">
             <span className="">
               <hr className="inline-block w-5 h-1 mr-2 border-orange-400 " />
               {title}
             </span>
           </h2>
-          <div className="text-4xl font-bold text-gray-100">{description}</div>
+          <div className="text-4xl font-bold text-gray-900 ">{description}</div>
           {children}
         </div>
-        <div className={align()}>
+        <div className={"flex " + align()}>
           <img
             src={image}
             alt="Logo"
-            className="w-auto mx-auto mt-10 rounded-lg lg:mt-0"
+            className="z-20 w-auto mx-auto mt-10 rounded-lg lg:mt-0"
           />
         </div>
       </div>

@@ -5,7 +5,7 @@ import {
 } from "@heroicons/react/24/outline";
 import { NavLink } from "react-router-dom";
 import Button from "../components/Button";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import logo from "../assets/logo1.png";
 
 export default function Header() {
@@ -17,9 +17,22 @@ export default function Header() {
   ];
   let [isOpen, setisOpen] = useState(false);
 
+  const [scroll, setScroll] = useState(false);
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      setScroll(window.scrollY > 50);
+    });
+  }, []);
+
   return (
-    <header className="fixed top-0 left-0 w-full shadow-md bg-gray-950 ">
-      <div className="container items-center justify-between pt-2 pb-1 md:flex">
+    <header
+      className={
+        scroll
+          ? "bg-black fixed top-0 left-0 z-50 w-full shadow-md transparent"
+          : "bg-transparent fixed top-0 left-0 z-50 w-full shadow-md transparent"
+      }
+    >
+      <div className="container z-20 items-center justify-between py-3 md:flex">
         <NavLink
           to="/"
           className="flex items-center gap-2 text-2xl cursor-pointer"

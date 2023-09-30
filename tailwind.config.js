@@ -6,6 +6,7 @@ module.exports = {
       colors: {
         red: "#C0A86C",
         red: "#BE2127",
+        star: "#fbbc04",
       },
     },
   },

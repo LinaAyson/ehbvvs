@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="relative pt-8 pb-6 bg-gray-900">
+    <footer className="relative py-20 bg-black">
       <div className="container px-4 mx-auto">
         <div className="flex flex-wrap text-left lg:text-left">
           <div className="w-full px-4 lg:w-6/12">
@@ -124,13 +124,13 @@ export default function Footer() {
         <div className="flex flex-wrap items-center justify-center md:justify-between">
           <div className="w-full px-4 mx-auto text-center md:w-4/12">
             <div className="py-1 text-sm font-semibold text-gray-500">
-              Copyright © <span id="get-current-year">2023</span>
+              Copyright © 2023
               <a
                 href=""
-                className="text-gray-500 hover:text-indigo-900"
+                className="text-gray-500 hover:text-indigo-600"
                 target="_blank"
               >
-                Weblou
+                <p>Weblou</p>
               </a>
             </div>
           </div>

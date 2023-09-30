@@ -3,6 +3,8 @@ import SplitImage from "../sections/SplitImage";
 import pic1 from "../assets/img-0627.jpg";
 import pic2 from "../assets/img-0615.jpg";
 import ListItem from "../components/ListItem";
+import Testimonials from "../sections/Testimonials";
+import ContactForm from "../sections/ContactForm";
 
 export default function Home() {
   return (
@@ -42,6 +44,8 @@ export default function Home() {
           eveniet autem molestias sed?
         </p>
       </SplitImage>
+      <Testimonials />
+      <ContactForm className="text-gray-100 bg-gray-950" />
     </>
   );
 }
