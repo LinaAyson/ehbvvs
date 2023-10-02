@@ -6,6 +6,7 @@ import Careers from "./pages/Careers";
 import Services from "./pages/Services";
 import Prices from "./pages/Prices";
 import About from "./pages/About";
+import Vvsskargarden from "./pages/Vvsskargarden";
 
 export default function App() {
   return (
@@ -18,6 +19,7 @@ export default function App() {
           <Route path="tjanster" element={<Services />} />
           <Route path="priser" element={<Prices />} />
           <Route path="om-oss" element={<About />} />
+          <Route path="vvs-skargarden" element={<Vvsskargarden />} />
         </Route>
       </Routes>
     </BrowserRouter>

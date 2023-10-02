@@ -44,8 +44,9 @@ export default function Home() {
           eveniet autem molestias sed?
         </p>
       </SplitImage>
-      <Testimonials />
+
       <ContactForm className="text-gray-100 bg-gray-950" />
+      <Testimonials />
     </>
   );
 }

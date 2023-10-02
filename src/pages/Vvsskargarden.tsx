@@ -1,16 +1,15 @@
 import HeroPage from "../sections/HeroPage";
-import ContactForm from "../sections/ContactForm";
 import SplitImage from "../sections/SplitImage";
-import image from "../assets/img-0631.jpg";
+import skargarden from "../assets/skargarden.jpg";
 
-export default function Prices() {
+export default function Vvsskargarden() {
   return (
-    <>
-      <HeroPage title="Priser" />
+    <section>
+      <HeroPage title="Rörmokare" />
       <SplitImage
-        image={image}
-        title="Priser"
-        description="lorem"
+        image={skargarden}
+        title="VVS på ön"
+        description="Vi på EHB VVS kommer till ön och utför vvs-arbeten allt från service och reparation till nyinstallation"
         alignImage="left"
       >
         <p>
@@ -20,6 +19,6 @@ export default function Prices() {
           suscipit!
         </p>
       </SplitImage>
-    </>
+    </section>
   );
 }

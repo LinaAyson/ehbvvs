@@ -3,6 +3,7 @@ import {
   MapPinIcon,
   PhoneIcon,
 } from "@heroicons/react/24/outline";
+import Headline from "../components/Headline";
 
 type ContactFormProps = {
   className?: string;
@@ -14,11 +15,8 @@ export default function ContactForm({ className }: ContactFormProps) {
       <div className="container py-10 ">
         <div className="flex flex-col lg:flex-row">
           <div className="lg:basis-2/3 md:basis-1/2">
-            <h6 className="text-sm font-bold text-left text-orange-400 uppercase">
-              <hr className="inline-block w-5 h-1 mx-1 border-orange-400 " />
-              Frågor?
-            </h6>
-            <section className="">
+            <Headline title="Frågor?" />
+            <div>
               <div className="max-w-screen-md py-2 lg:py-2">
                 <h2 className="mb-4 text-4xl font-bold tracking-tight text-left">
                   Kontakta oss
@@ -79,7 +77,7 @@ export default function ContactForm({ className }: ContactFormProps) {
                   </button>
                 </form>
               </div>
-            </section>
+            </div>
           </div>
 
           <div className="m-10 mt-20 font-light lg:basis-1/3">
@@ -89,18 +87,18 @@ export default function ContactForm({ className }: ContactFormProps) {
               niche markets. Professionally cultivate one-to-one customer
               service.
             </p>
-            <div className="flex flex-col mt-5">
-              <div className="inline-flex mt-5">
+            <div className="flex flex-col mt-5 ">
+              <div className="inline-flex mt-5 space-x-4 ">
                 <MapPinIcon className="w-8 h-8 text-orange-400 " />
                 <a href="https://maps.app.goo.gl/Xh5iuj4yNDgowtDd7">
                   Östermalmsgatan 21, 114 26 Stockholm
                 </a>
               </div>
-              <div className="inline-flex mt-5 ">
+              <div className="inline-flex mt-5 space-x-4 ">
                 <PhoneIcon className="w-8 h-8 text-orange-400 " />
                 <a href="tel:+46709545442">0709545442</a>
               </div>
-              <div className="inline-flex mt-5 ">
+              <div className="inline-flex mt-5 space-x-4 ">
                 <EnvelopeIcon className="w-8 h-8 text-orange-400 " />
                 <a href="mailto:emailadress@email.se">emailadress@email.se</a>
               </div>

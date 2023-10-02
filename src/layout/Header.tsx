@@ -14,6 +14,7 @@ export default function Header() {
     { name: "Priser", link: "/priser" },
     { name: "Karriär", link: "/karriar" },
     { name: "Om oss", link: "/om-oss" },
+    { name: "Rörmokare skärgården", link: "/vvs-skargarden" },
   ];
   let [isOpen, setisOpen] = useState(false);
 

@@ -1,5 +1,5 @@
-import { func } from "prop-types";
 import React from "react";
+import Headline from "../components/Headline";
 
 type SplitImageProps = {
   image: string;
@@ -25,15 +25,10 @@ export default function SplitImage({
   }
 
   return (
-    <section className="w-full py-10 ">
+    <section className="w-full py-10">
       <div className="container grid lg:grid-cols-2">
         <div className="my-auto space-y-5 text-gray-800">
-          <h2 className="font-bold text-orange-400 uppercase text-md">
-            <span className="">
-              <hr className="inline-block w-5 h-1 mr-2 border-orange-400 " />
-              {title}
-            </span>
-          </h2>
+          <Headline title={title} />
           <div className="text-4xl font-bold text-gray-900 ">{description}</div>
           {children}
         </div>

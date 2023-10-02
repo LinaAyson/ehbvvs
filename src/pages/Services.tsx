@@ -9,7 +9,7 @@ export default function Services() {
       <SplitImage
         image={image}
         title="Våra tjänster"
-        description="dennis äter bajskorvar"
+        description="Vi erbjuder"
         alignImage="right"
       >
         <p>
