@@ -6,7 +6,7 @@ import image from "../assets/img-0631.jpg";
 export default function Prices() {
   return (
     <>
-      <HeroPage title="Priser" />
+      <HeroPage title="Priser" undertext="priserna är" />
       <SplitImage
         image={image}
         title="Priser"

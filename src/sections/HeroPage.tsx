@@ -2,9 +2,10 @@ import { NavLink } from "react-router-dom";
 
 type HeroPageProps = {
   title: string;
+  undertext: string;
 };
 
-export default function HeroPage({ title }: HeroPageProps) {
+export default function HeroPage({ title, undertext }: HeroPageProps) {
   return (
     <section className="relative flex overflow-hidden bg-black">
       <div className="container z-20 pt-10">
@@ -12,9 +13,8 @@ export default function HeroPage({ title }: HeroPageProps) {
           <h2 className="max-w-2xl mx-auto text-4xl font-bold tracking-tight text-center text-white sm:text-5xl">
             {title}
           </h2>
-          <p className="max-w-xl mx-auto mt-4 italic text-center text-gray-100 sm:text-xl/relaxed xs:text-center xs:text-lg">
-            Reprehenderit ad esse et non officia in nulla. Id proident tempor
-            incididunt nostrud nulla et culpa.
+          <p className="max-w-xl mx-auto mt-4 text-center text-gray-100 sm:text-xl/relaxed xs:text-center xs:text-lg">
+            {undertext}
           </p>
         </div>
       </div>

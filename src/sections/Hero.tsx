@@ -1,16 +1,15 @@
 import Button from "../components/Button";
-import React from "react";
 
 export default function Hero() {
   return (
     <section className="relative flex overflow-hidden bg-black">
       <div className="container z-20 flex pt-10">
-        <div className="relative py-24 overflow-hidden text-gray-100  isolate xl:py-48">
+        <div className="relative py-24 overflow-hidden text-gray-100 isolate xl:py-48">
           <h1 className="text-5xl font-bold bg-clip-text sm:text-6xl xs:text-center">
             EHB VVS <span className="sm:block"> Rörmokare i Stockholm </span>
           </h1>
-          <p className="max-w-xl mt-4 italic sm:text-xl/relaxed xs:text-center xs:text-lg">
-            Säkra vattenlösningar i Stockholm
+          <p className="max-w-xl mt-4 sm:text-xl/relaxed xs:text-center xs:text-lg">
+            Säkra vattenlösningar i hela Stockholm
           </p>
           <div className="flex flex-wrap gap-4 mt-8 xs:text-center">
             <Button text="Våra tjänster" type="primary" link="/tjanster" />

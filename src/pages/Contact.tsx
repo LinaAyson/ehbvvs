@@ -5,7 +5,7 @@ import Testimonials from "../sections/Testimonials";
 export default function Contact() {
   return (
     <>
-      <HeroPage title="Kontakt" />
+      <HeroPage title="Kontakt" undertext="kontakta oss för .." />
       <ContactForm />
       <Testimonials />
     </>

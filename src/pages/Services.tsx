@@ -5,7 +5,7 @@ import image from "../assets/img-0631.jpg";
 export default function Services() {
   return (
     <>
-      <HeroPage title="Tjänster" />
+      <HeroPage title="Tjänster" undertext="vi erbjuder er en .." />
       <SplitImage
         image={image}
         title="Våra tjänster"

@@ -7,7 +7,7 @@ import Coworkers from "../sections/Coworkers";
 export default function About() {
   return (
     <>
-      <HeroPage title="Om oss" />
+      <HeroPage title="Om oss" undertext="hello" />
       <SplitImage
         image={image}
         title="Om oss"

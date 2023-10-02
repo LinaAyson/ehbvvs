@@ -6,7 +6,7 @@ import image from "../assets/img-0631.jpg";
 export default function Careers() {
   return (
     <>
-      <HeroPage title="Karriär" />
+      <HeroPage title="Karriär" undertext="vill du ha karriär" />
       <SplitImage
         image={image}
         title="Karriär"

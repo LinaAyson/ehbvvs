@@ -17,7 +17,7 @@ export default function Coworker({ coworker }: coworkerProps) {
         <img
           src={coworker.imageUrl}
           alt={coworker.name}
-          className="object-cover"
+          className="object-cover transition duration-300 ease-in-out opacity-90 hover:scale-110 hover:opacity-40"
         />
       </div>
       <div className="text-center">
