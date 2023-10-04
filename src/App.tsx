@@ -20,6 +20,7 @@ export default function App() {
           <Route path="priser" element={<Prices />} />
           <Route path="om-oss" element={<About />} />
           <Route path="vvs-skargarden" element={<Vvsskargarden />} />
+          <Route path="vvs-skargarden3" element={<Vvsskargarden />} />
         </Route>
       </Routes>
     </BrowserRouter>
