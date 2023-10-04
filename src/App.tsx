@@ -21,6 +21,7 @@ export default function App() {
           <Route path="om-oss" element={<About />} />
           <Route path="vvs-skargarden" element={<Vvsskargarden />} />
           <Route path="vvs-skargarden3" element={<Vvsskargarden />} />
+          <Route path="vvs-skargarden2" element={<Vvsskargarden />} />
         </Route>
       </Routes>
     </BrowserRouter>
