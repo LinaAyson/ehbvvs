@@ -1,6 +1,6 @@
 import HeroPage from "../sections/HeroPage";
 import SplitImage from "../sections/SplitImage";
-import skargarden from "../assets/skargarden.jpg";
+import skargarden from "../assets/skargarden-img.jpg";
 import ListItem from "../components/ListItem";
 
 export default function Vvsskargarden() {

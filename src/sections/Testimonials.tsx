@@ -2,7 +2,7 @@ import Stars from "../components/Stars";
 
 export default function Testimonials() {
   return (
-    <section className="py-24 bg-gray-950 sm:py-32">
+    <section className="py-24 bg-zinc-950 sm:py-32">
       <div className="px-6 mx-auto max-w-7xl lg:px-8">
         <div className="grid max-w-2xl grid-cols-1 mx-auto lg:mx-0 lg:max-w-none lg:grid-cols-2">
           <div className="flex flex-col pb-10 sm:pb-16 lg:pb-0 lg:pr-8 xl:pr-20">

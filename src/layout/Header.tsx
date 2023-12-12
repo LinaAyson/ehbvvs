@@ -7,15 +7,15 @@ import { NavLink } from "react-router-dom";
 import Button from "../components/Button";
 import { useEffect, useState } from "react";
 import logo from "../assets/logo1.png";
-
 export default function Header() {
   let Links = [
     { name: "Tjänster", link: "/tjanster" },
     { name: "Priser", link: "/priser" },
     { name: "Karriär", link: "/karriar" },
     { name: "Om oss", link: "/om-oss" },
-    { name: "Rörmokare skärgården", link: "/vvs-skargarden" },
+    { name: "Skärgården", link: "/vvs-skargarden" },
   ];
+
   let [isOpen, setisOpen] = useState(false);
 
   const [scroll, setScroll] = useState(false);
@@ -25,10 +25,16 @@ export default function Header() {
     });
   }, []);
 
+  const closeMenu = () => {
+    setisOpen(false);
+  };
+
   return (
     <header
       className={
-        scroll
+        isOpen
+          ? "bg-black fixed top-0 left-0 z-50 w-full h-full shadow-md"
+          : scroll
           ? "bg-black fixed top-0 left-0 z-50 w-full shadow-md transparent"
           : "bg-transparent fixed top-0 left-0 z-50 w-full shadow-md transparent"
       }
@@ -37,24 +43,39 @@ export default function Header() {
         <NavLink
           to="/"
           className="flex items-center gap-2 text-2xl cursor-pointer"
+          onClick={closeMenu}
         >
           <img src={logo} className="w-16" />
-          {/* <WrenchScrewdriverIcon className="text-gray-100 w-7 h-7" />
-          <span className="font-bold text-gray-100 ">EHB VVS</span> */}
         </NavLink>
         <div
           onClick={() => setisOpen(!isOpen)}
-          className="absolute cursor-pointer w-7 h-7 right-8 top-6 md:hidden"
+          className="absolute text-white cursor-pointer w-7 h-7 right-8 top-6 md:hidden"
         >
-          {isOpen ? <XMarkIcon /> : <Bars3BottomRightIcon />}
+          {isOpen ? <XMarkIcon className="" /> : <Bars3BottomRightIcon />}
         </div>
-        <ul className="flex space-x-5 text-gray-100">
-          {Links.map((link) => (
-            <NavLink to={link.link} className="my-auto">
+        <ul
+          className={
+            isOpen
+              ? "flex flex-col md:flex-row space-y-3 md:space-y-0 md:space-x-5 text-gray-100"
+              : "hidden md:flex space-x-5 text-gray-100"
+          }
+        >
+          {Links.map((link, index) => (
+            <NavLink
+              key={index}
+              to={link.link}
+              className="my-auto"
+              onClick={closeMenu}
+            >
               {link.name}
             </NavLink>
           ))}
-          <Button link="/kontakt" type="primary" text="Kontakta oss" />
+          <Button
+            link="/kontakt"
+            type="primary"
+            text="Kontakta oss"
+            onClick={closeMenu}
+          />
         </ul>
       </div>
     </header>

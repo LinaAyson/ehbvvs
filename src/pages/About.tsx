@@ -1,8 +1,9 @@
 import HeroPage from "../sections/HeroPage";
 import SplitImage from "../sections/SplitImage";
 import image from "../assets/img-0631.jpg";
-import Headline from "../components/Headline";
+
 import Coworkers from "../sections/Coworkers";
+import Headline from "../components/Headline";
 
 export default function About() {
   return (
@@ -22,6 +23,7 @@ export default function About() {
         </p>
       </SplitImage>
       <Headline title={"Vårat team"} />
+
       <Coworkers />
     </>
   );

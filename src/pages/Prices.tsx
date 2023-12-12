@@ -1,5 +1,4 @@
 import HeroPage from "../sections/HeroPage";
-import ContactForm from "../sections/ContactForm";
 import SplitImage from "../sections/SplitImage";
 import image from "../assets/img-0631.jpg";
 

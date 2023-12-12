@@ -31,7 +31,7 @@ export default function Home() {
           <ListItem text="ROT-arbeten" />
         </ul>
       </SplitImage>
-      <SplitImage
+      {/* <SplitImage
         title="Om oss"
         description="Vi finns för att hjälpa dig"
         image={pic2}
@@ -43,9 +43,9 @@ export default function Home() {
           distinctio delectus facere, cumque est dicta obcaecati architecto
           eveniet autem molestias sed?
         </p>
-      </SplitImage>
+      </SplitImage> */}
 
-      <ContactForm className="text-gray-100 bg-gray-950" />
+      <ContactForm className="flex flex-col p-10 text-white rounded-lg bg-secondaryGrey lg:flex-row" />
       <Testimonials />
     </>
   );

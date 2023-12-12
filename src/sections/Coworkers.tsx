@@ -30,7 +30,7 @@ export default function Coworkers() {
   return (
     <section className="my-10">
       <div className="container">
-        <div className="grid w-full grid-cols-2 gap-5 md:grid-cols-3 ">
+        <div className="grid w-full grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3 ">
           {coworkersData.map((coworker) => (
             <Coworker coworker={coworker} />
           ))}
