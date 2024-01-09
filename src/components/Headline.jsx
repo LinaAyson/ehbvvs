@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function Headline({ title }) {
   return (
     <section className="container w-full">

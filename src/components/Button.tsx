@@ -17,7 +17,7 @@ export default function Button({
   function classNames(type: string) {
     switch (type) {
       case "primary":
-        return "bg-black text-gray-100 border border-primaryRed ";
+        return "bg-black text-gray-100 border border-primaryRed hover:border-primaryGrey ";
       case "secondary":
         return "bg-black text-gray-100";
       case "default":
@@ -30,7 +30,7 @@ export default function Button({
   return (
     <NavLink
       to={link}
-      className={"px-3 py-2 font-semibold rounded-lg " + classNames(type)}
+      className={"px-3 py-2 font-semibold rounded-lg  " + classNames(type)}
       onClick={onClick}
     >
       {text}

@@ -5,10 +5,9 @@ export default function Hero() {
     <section className="relative flex overflow-hidden bg-black">
       <div className="container z-20 flex pt-10">
         <div className="relative py-24 overflow-hidden text-gray-100 isolate xl:py-48">
-          <h1 className="text-5xl font-bold text-gray-200 bg-clip-text sm:text-6xl xs:text-center">
+          <h1 className="text-5xl font-bold text-gray-200 bg-clip-text sm:text-6xl xs:text-center te">
             EHB <span className="text-primaryRed">VVS</span>
             <span className="text-gray-200 sm:block">
-              {" "}
               Rörmokare i Stockholm{" "}
             </span>
           </h1>

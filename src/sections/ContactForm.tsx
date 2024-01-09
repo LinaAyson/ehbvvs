@@ -92,7 +92,10 @@ export default function ContactForm({ className }: ContactFormProps) {
             <div className="flex flex-col mt-5 ">
               <div className="inline-flex mt-5 space-x-4 ">
                 <MapPinIcon className="w-8 h-8 text-primaryRed " />
-                <a href="https://maps.app.goo.gl/Xh5iuj4yNDgowtDd7">
+                <a
+                  href="https://maps.app.goo.gl/Xh5iuj4yNDgowtDd7"
+                  target="_blank"
+                >
                   Östermalmsgatan 21, 114 26 Stockholm
                 </a>
               </div>

@@ -1,7 +1,6 @@
 import Hero from "../sections/Hero";
 import SplitImage from "../sections/SplitImage";
 import pic1 from "../assets/img-0627.jpg";
-import pic2 from "../assets/img-0615.jpg";
 import ListItem from "../components/ListItem";
 import Testimonials from "../sections/Testimonials";
 import ContactForm from "../sections/ContactForm";

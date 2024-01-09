@@ -11,7 +11,7 @@ export default function Header() {
   let Links = [
     { name: "Tjänster", link: "/tjanster" },
     { name: "Priser", link: "/priser" },
-    { name: "Karriär", link: "/karriar" },
+    // { name: "Karriär", link: "/karriar" },
     { name: "Om oss", link: "/om-oss" },
     { name: "Skärgården", link: "/vvs-skargarden" },
   ];
@@ -45,7 +45,7 @@ export default function Header() {
           className="flex items-center gap-2 text-2xl cursor-pointer"
           onClick={closeMenu}
         >
-          <img src={logo} className="w-16" />
+          <img src={logo} className="w-16 mt-2" />
         </NavLink>
         <div
           onClick={() => setisOpen(!isOpen)}
