@@ -17,7 +17,7 @@ export default function Button({
   function classNames(type: string) {
     switch (type) {
       case "primary":
-        return "bg-black text-gray-100 border border-primaryRed hover:border-primaryGrey ";
+        return "bg-black text-gray-200 border border-primaryRed hover:border-red ";
       case "secondary":
         return "bg-black text-gray-100";
       case "default":

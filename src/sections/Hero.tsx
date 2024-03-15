@@ -6,8 +6,10 @@ export default function Hero() {
       <div className="container z-20 flex pt-10">
         <div className="relative py-24 overflow-hidden text-gray-100 isolate xl:py-48">
           <h1 className="text-5xl font-bold text-gray-200 bg-clip-text sm:text-6xl xs:text-center te">
-            EHB <span className="text-primaryRed">VVS</span>
-            <span className="text-gray-200 sm:block">
+            <span className="whitespace-nowrap">
+              EHB <span className="text-primaryRed">VVS</span>
+            </span>
+            <span className="block text-gray-200 xs:inline sm:block">
               Rörmokare i Stockholm{" "}
             </span>
           </h1>

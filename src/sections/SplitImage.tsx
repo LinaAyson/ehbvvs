@@ -25,7 +25,7 @@ export default function SplitImage({
   }
 
   return (
-    <section className="w-full py-10 ">
+    <section className="w-full py-16 ">
       <div className="container grid lg:grid-cols-2">
         <div className="my-auto space-y-5 text-white">
           <Headline title={title} />

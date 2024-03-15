@@ -56,7 +56,7 @@ export default function Header() {
         <ul
           className={
             isOpen
-              ? "flex flex-col md:flex-row space-y-3 md:space-y-0 md:space-x-5 text-gray-100"
+              ? "flex flex-col md:flex-row space-y-3 md:space-y-0 md:space-x-5 text-gray-100 mt-6"
               : "hidden md:flex space-x-5 text-gray-100"
           }
         >
