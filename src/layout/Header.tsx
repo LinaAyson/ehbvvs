@@ -1,8 +1,4 @@
-import {
-  Bars3BottomRightIcon,
-  WrenchScrewdriverIcon,
-  XMarkIcon,
-} from "@heroicons/react/24/outline";
+import { Bars3BottomRightIcon, XMarkIcon } from "@heroicons/react/24/outline";
 import { NavLink } from "react-router-dom";
 import Button from "../components/Button";
 import { useEffect, useState } from "react";
@@ -11,7 +7,6 @@ export default function Header() {
   let Links = [
     { name: "Tjänster", link: "/tjanster" },
     { name: "Priser", link: "/priser" },
-    // { name: "Karriär", link: "/karriar" },
     { name: "Om oss", link: "/om-oss" },
     { name: "Skärgården", link: "/vvs-skargarden" },
   ];

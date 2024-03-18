@@ -27,18 +27,22 @@ export default function ContactForm({ className }: ContactFormProps) {
             <div>
               <div className="max-w-screen-md py-2 lg:py-2">
                 <p className="mb-8 font-light text-gray-200 lg:mb-8 sm:text-lg">
-                  Har du frågor om tjänster, priser eller annat tveka inte på
-                  att kontakta oss
+                  Har du frågor om tjänster, priser eller något annat? Tveka
+                  inte att höra av dig
                 </p>
                 <h2 className="text-4xl font-bold tracking-tight text-left ">
                   Kontakta oss
                 </h2>
                 <p className="mb-4">
                   Vårt kontaktformulär är för tillfälligt otillgängligt.
+                  <br />
                   Kontakta oss gärna på{" "}
-                  <a href="mailto:info@ehvvs.com"> info@ehvvs.com </a> eller
-                  <a href="tel:+00460101234567"> 010-123 45 67</a>. Tack för din
-                  förståelse!
+                  <a className="text-red" href="mailto:info@ehvvs.com">
+                    {" "}
+                    info@ehvvs.com{" "}
+                  </a>{" "}
+                  eller
+                  <a href="tel:+46709545442"> 0709545442</a>
                 </p>
 
                 <form className="space-y-8">
