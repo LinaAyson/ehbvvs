@@ -18,7 +18,7 @@ export default function Prices() {
       >
         <p>
           2000:- ex moms 2 timmars arbete samt servicebil ingår. Efter 2 timmar
-          debiterar vi 620:- ex moms per timme. Material tillkommer.
+          debiterar vi 650:- ex moms per timme. Material tillkommer.
         </p>
         <p>
           Arbete i skärgården. 690:- ex moms per timme. 550:- ex moms för
